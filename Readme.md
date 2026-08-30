@@ -33,6 +33,10 @@ Configure your MCP client to launch the built server over stdio. For example:
 
 Replace the path with the absolute path to this project.
 
+## Used In
+
+This MCP Server is being used in [mcp-client](https://github.com/andresilvase/mcp-client).
+
 ## Available tools
 
 ### `get_alerts`
