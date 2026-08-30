@@ -26,7 +26,14 @@ async function makeNWSRequest<T>(url: string): Promise<T | null> {
         }
         return (await response.json()) as T;
     } catch (error) {
-        console.error("Error making NWS request:", error);
+
+
+        if ((error as Error).message.includes("status: 400") || (error as Error).message.includes("status: 404")) {
+            console.error("Error making NWS request: Location not found or invalid request. Please check the input parameters.");
+        } else {
+            console.error("Error making NWS request:", error);
+        }
+
         return null;
     }
 }
