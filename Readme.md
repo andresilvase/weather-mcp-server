@@ -1,6 +1,6 @@
 # Weather MCP Server
 
-An MCP server that retrieves weather alerts and forecasts from the National Weather Service API.
+The `weather-mcp-server` is an MCP server that retrieves weather alerts and forecasts from the National Weather Service API.
 
 ## Requirements
 
